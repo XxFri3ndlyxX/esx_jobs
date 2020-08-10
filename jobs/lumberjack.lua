@@ -19,10 +19,10 @@ Config.Jobs.lumberjack = {
 	Zones = {
 
 		CloakRoom = {
-			Pos = {x = 1200.63, y = -1276.87, z = 34.38},
+			Pos = {x = 1200.63, y = -1276.87, z = 34.26},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
 			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Marker = 25,
 			Blip = true,
 			Name = _U('lj_locker_room'),
 			Type = 'cloakroom',
@@ -30,10 +30,10 @@ Config.Jobs.lumberjack = {
 		},
 
 		Wood = {
-			Pos = {x = -534.32, y = 5373.79, z = 69.50},
+			Pos = {x = -531.25, y = 5373.7, z = 69.48},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
 			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Marker = 25,
 			Blip = true,
 			Name = _U('lj_mapblip'),
 			Type = 'work',
@@ -54,11 +54,11 @@ Config.Jobs.lumberjack = {
 		},
 
 		CuttedWood = {
-			Pos = {x = -552.21, y = 5326.90, z = 72.59},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
+			Pos = {x = -552.6, y = 5326.6, z = 72.64},
+			Size = {x = 2.15, y = 2.15, z = 1.0},
 			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
-			Blip = false,
+			Marker = 25,
+			Blip = true,
 			Name = _U('lj_cutwood'),
 			Type = 'work',
 			Item = {
@@ -81,8 +81,8 @@ Config.Jobs.lumberjack = {
 			Pos = {x = -501.38, y = 5280.53, z = 79.61},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
 			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
-			Blip = false,
+			Marker = 25,
+			Blip = true,
 			Name = _U('lj_board'),
 			Type = 'work',
 			Item = {
@@ -102,16 +102,16 @@ Config.Jobs.lumberjack = {
 		},
 
 		VehicleSpawner = {
-			Pos = {x = 1191.96, y = -1261.77, z = 34.17},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
+			Pos = {x = 1218.56, y = -1267.05, z = 35.48},
+			Size = {x = 1.65, y = 1.65, z = 1.0},
 			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
-			Blip = false,
+			Marker = 25,
+			Blip = true,
 			Name = _U('spawn_veh'),
 			Type = 'vehspawner',
 			Spawner = 1,
 			Hint = _U('spawn_veh_button'),
-			Caution = 2000
+			Caution = Config.LumberjackCaution
 		},
 
 		VehicleSpawnPoint = {
@@ -126,16 +126,16 @@ Config.Jobs.lumberjack = {
 		},
 
 		VehicleDeletePoint = {
-			Pos = {x = 1216.89, y = -1229.23, z = 34.40},
-			Size = {x = 5.0, y = 5.0, z = 1.0},
+			Pos = {x = 1200.58, y = -1230.19, z = 34.25},
+			Size = {x = 4.0, y = 4.0, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
-			Marker = 1,
-			Blip = false,
+			Marker = 25,
+			Blip = true,
 			Name = _U('return_vh'),
 			Type = 'vehdelete',
 			Hint = _U('return_vh_button'),
 			Spawner = 1,
-			Caution = 2000,
+			Caution = Config.LumberjackCaution,
 			GPS = 0,
 			Teleport = 0
 		},
@@ -144,7 +144,7 @@ Config.Jobs.lumberjack = {
 			Pos = {x = 1201.35, y = -1327.51, z = 34.22},
 			Color = {r = 204, g = 204, b = 0},
 			Size = {x = 5.0, y = 5.0, z = 3.0},
-			Marker = 1,
+			Marker = 25,
 			Blip = true,
 			Name = _U('delivery_point'),
 			Type = 'delivery',
