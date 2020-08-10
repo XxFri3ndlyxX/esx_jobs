@@ -242,11 +242,13 @@ AddEventHandler('esx_jobs:spawnJobVehicle', function(spawnPoint, vehicle)
 		local plate = 'WORK' .. math.random(100, 900)
 		SetVehicleNumberPlateText(spawnedVehicle, plate)
 		myPlate[plate] = true
+		
 
 		TaskWarpPedIntoVehicle(playerPed, spawnedVehicle, -1)
 		Citizen.Wait(1)
-		SetVehicleFuelLevel(vehicle, 100.0)
-		DecorSetFloat(vehicle, "_FUEL_LEVEL", GetVehicleFuelLevel(vehicle))
+		if Config.EnableLegacyFuel then
+		exports["LegacyFuel"]:SetFuel(spawnedVehicle, 100)
+		end
 
 		if vehicle.HasCaution then
 			vehicleInCaseofDrop = spawnedVehicle
@@ -298,7 +300,7 @@ Citizen.CreateThread(function()
 				end
 			end
 
-			if IsControlJustReleased(0, 38) and not menuIsShowed and isInMarker then
+			if IsControlJustReleased(0, 26) and not menuIsShowed and isInMarker then
 				if onDuty or currentZone.Type == 'cloakroom' or PlayerData.job.name == 'reporter' then
 					TriggerEvent('esx_jobs:action', PlayerData.job.name, currentZone, currentZoneIndex)
 				end
@@ -360,7 +362,7 @@ Citizen.CreateThread(function()
 				letSleep, isInPublicMarker = false, true
 				ESX.ShowHelpNotification(v.Hint)
 
-				if IsControlJustReleased(0, 38) then
+				if IsControlJustReleased(0, 26) then
 					ESX.Game.Teleport(playerPed, v.Teleport)
 				end
 			end
@@ -383,4 +385,29 @@ Citizen.CreateThread(function()
 	-- Tailor
 	RequestIpl('id2_14_during_door')
 	RequestIpl('id2_14_during1')
+end)
+
+
+-- Disable Controls
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(1)
+		local playerPed = PlayerPedId(-1)
+
+		if hasAlreadyEnteredMarker then
+			DisableControlAction(0, 24, true) -- Attack
+			DisableControlAction(0, 257, true) -- Attack 2
+			DisableControlAction(0, 25, true) -- Aim
+			DisableControlAction(0, 263, true) -- Melee Attack 1
+			DisableControlAction(0, 47, true)  -- Disable weapon
+			DisableControlAction(0, 264, true) -- Disable melee
+			DisableControlAction(0, 257, true) -- Disable melee
+			DisableControlAction(0, 140, true) -- Disable melee
+			DisableControlAction(0, 141, true) -- Disable melee
+			DisableControlAction(0, 142, true) -- Disable melee
+			DisableControlAction(0, 143, true) -- Disable melee
+		else
+			Citizen.Wait(500)
+		end
+	end
 end)
