@@ -19,22 +19,22 @@ Config.Jobs.tailor = {
 	Zones = {
 
 		CloakRoom = {
-			Pos = {x = 706.73, y = -960.90, z = 29.39},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 706.73, y = -960.90, z = 29.43},
+			Size = {x = 2.0, y = 2.0, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('dd_dress_locker'),
 			Type = 'cloakroom',
 			Hint = _U('cloak_change'),
-			GPS = {x = 740.80, y = -970.06, z = 23.46}
+			GPS = 0
 		},
 
 		Wool = {
-			Pos = {x = 1978.92, y = 5171.70, z = 46.63},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 1961.64, y = 5184.94, z = 47.02},
+			Size = {x = 2.2, y = 2.2, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('dd_wool'),
 			Type = 'work',
@@ -52,14 +52,14 @@ Config.Jobs.tailor = {
 				}
 			},
 			Hint = _U('dd_pickup'),
-			GPS = {x = 715.95, y = -959.63, z = 29.39}
+			GPS = 0
 		},
 
 		Fabric = {
-			Pos = {x = 715.95, y = -959.63, z = 29.39},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 711.45, y = -969.51, z = 29.44},
+			Size = {x = 2.05, y = 2.05, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('dd_fabric'),
 			Type = 'work',
@@ -77,14 +77,14 @@ Config.Jobs.tailor = {
 				}
 			},
 			Hint = _U('dd_makefabric'),
-			GPS = {x = 712.92, y = -970.58, z = 29.39}
+			GPS = 0
 		},
 
 		Clothe = {
-			Pos = {x = 712.92, y = -970.58, z = 29.39},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 713.96, y = -959.89, z = 29.44},
+			Size = {x = 2.05, y = 2.05, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('dd_clothing'),
 			Type = 'work',
@@ -102,21 +102,21 @@ Config.Jobs.tailor = {
 				}
 			},
 			Hint = _U('dd_makeclothing'),
-			GPS = {x = 429.59, y = -807.34, z = 28.49}
+			GPS = 0
 		},
 
 		VehicleSpawner = {
-			Pos = {x = 740.80, y = -970.06, z = 23.46},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 715.42, y = -974.46, z = 23.96},
+			Size = {x = 1.6, y = 1.6, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('spawn_veh'),
 			Type = 'vehspawner',
 			Spawner = 1,
 			Hint = _U('spawn_veh_button'),
-			Caution = 2000,
-			GPS = {x = 1978.92, y = 5171.70, z = 46.63}
+			Caution = Config.TailorCaution,
+			GPS = 0
 		},
 
 		VehicleSpawnPoint = {
@@ -132,25 +132,25 @@ Config.Jobs.tailor = {
 		},
 
 		VehicleDeletePoint = {
-			Pos = {x = 693.79, y = -963.01, z = 22.82},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
+			Pos = {x = 711.38, y = -980.08, z = 23.14},
+			Size = {x = 3.4, y = 3.4, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
-			Marker = 1,
+			Marker = 25,
 			Blip = false,
 			Name = _U('return_vh'),
 			Type = 'vehdelete',
 			Hint = _U('return_vh_button'),
 			Spawner = 1,
-			Caution = 2000,
+			Caution = Config.TailorCaution,
 			GPS = 0,
 			Teleport = 0
 		},
 
 		Delivery = {
-			Pos = {x = 429.59, y = -807.34, z = 28.49},
-			Color = {r = 204, g = 204, b = 0},
-			Size = {x = 5.0, y = 5.0, z = 3.0},
-			Marker = 1,
+			Pos = {x = 426.97, y = -809.96, z = 28.53},
+			Color = {r = 0, g = 255, b = 0},
+			Size = {x = 1.4, y = 1.4, z = 3.0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('delivery_point'),
 			Type = 'delivery',
@@ -168,7 +168,7 @@ Config.Jobs.tailor = {
 				}
 			},
 			Hint = _U('dd_deliver_clothes'),
-			GPS = {x = 1978.92, y = 5171.70, z = 46.63}
+			GPS = 0
 		}
 	}
 }
