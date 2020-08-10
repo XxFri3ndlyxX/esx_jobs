@@ -3,6 +3,11 @@
 - [esx_addonaccount](https://github.com/ESX-Org/esx_addonaccount)
 - [esx_skin](https://github.com/ESX-Org/esx_skin)
 
+Tweaks and fixes by XxFri3ndlyxX
+Optional: added code to be able to use legacy fuel system. You may disable it in the config.
+Tweaked all job.
+Fixed some error popping up on fresh server due to fuel coding.
+
 ### Features
 - Jobs: slaughterer, miner, fisherman, journalist, fueler, tailor
 - Security deposit when renting a job vehicle (given back in case of crash, to the amount of damage the vehicle has already taken)
