@@ -7,6 +7,7 @@ Tweaks and fixes by XxFri3ndlyxX
 Optional: added code to be able to use legacy fuel system. You may disable it in the config.
 Tweaked all job.
 Fixed some error popping up on fresh server due to fuel coding.
+Works with esx v1 Final.
 
 ### Features
 - Jobs: slaughterer, miner, fisherman, journalist, fueler, tailor
