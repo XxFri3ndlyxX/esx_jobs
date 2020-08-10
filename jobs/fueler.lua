@@ -19,22 +19,22 @@ Config.Jobs.fueler = {
 	Zones = {
 
 		CloakRoom = {
-			Pos = {x = 557.93, y = -2327.90, z = 4.82},
-			Size = {x = 3.0, y = 3.0, z = 2.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 257.38, y = -3062.71, z = 4.87},
+			Size = {x = 2.0, y = 2.0, z = 2.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('f_oil_refiner'),
 			Type = 'cloakroom',
 			Hint = _U('cloak_change'),
-			GPS = {x = 554.59, y = -2314.43, z = 4.86}
+			GPS = 0
 		},
 
 		OilFarm = {
-			Pos = {x = 609.58, y = 2856.74, z = 38.90},
+			Pos = {x = 609.58, y = 2856.74, z = 38.95},
 			Size = {x = 20.0, y = 20.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('f_drill_oil'),
 			Type = 'work',
@@ -52,14 +52,14 @@ Config.Jobs.fueler = {
 				}
 			},
 			Hint = _U('f_drillbutton'),
-			GPS = {x = 2736.94, y = 1417.99, z = 23.48}
+			GPS = 0
 		},
 
 		OilRefinement = {
-			Pos = {x = 2736.94, y = 1417.99, z = 23.48},
-			Size = {x = 10.0, y = 10.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 2822.29, y = 1605.69, z = 23.56},
+			Size = {x = 4.0, y = 4.0, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('f_fuel_refine'),
 			Type = 'work',
@@ -77,14 +77,14 @@ Config.Jobs.fueler = {
 				}
 			},
 			Hint = _U('f_refine_fuel_button'),
-			GPS = {x = 265.75, y = -3013.39, z = 4.73}
+			GPS = 0
 		},
 
 		OilMix = {
-			Pos = {x = 265.75, y = -3013.39, z = 4.73},
-			Size = {x = 10.0, y = 10.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = 289.45, y = -3099.77, z = 4.92},
+			Size = {x = 5.0, y = 5.0, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('f_fuel_mixture'),
 			Type = 'work',
@@ -102,25 +102,25 @@ Config.Jobs.fueler = {
 				}
 			},
 			Hint = _U('f_fuel_mixture_button'),
-			GPS = {x = 491.40, y = -2163.37, z = 4.91}
+			GPS = 0
 		},
 
 		VehicleSpawner = {
-			Pos = {x = 554.59, y = -2314.43, z = 4.86},
-			Size = {x = 3.0, y = 3.0, z = 2.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
-			Blip = false,
+			Pos = {x = 259.64, y = -3059.69, z = 4.9},
+			Size = {x = 2.0, y = 2.0, z = 2.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
+			Blip = true,
 			Name = _U('spawn_veh'),
 			Type = 'vehspawner',
 			Spawner = 1,
 			Hint = _U('spawn_truck_button'),
-			Caution = 2000,
-			GPS = {x = 602.25, y = 2926.62, z = 39.68}
+			Caution = Config.FuelerCaution,
+			GPS = 0
 		},
 
 		VehicleSpawnPoint = {
-			Pos = {x = 570.54, y = -2309.70, z = 4.90},
+			Pos = {x = 245.07, y = -3065.91, z = 5.83},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
 			Marker = -1,
 			Blip = false,
@@ -128,29 +128,29 @@ Config.Jobs.fueler = {
 			Type = 'vehspawnpt',
 			Spawner = 1,
 			GPS = 0,
-			Heading = 0
+			Heading = 134.5
 		},
 
 		VehicleDeletePoint = {
-			Pos = {x = 520.68, y = -2124.21, z = 4.98},
-			Size = {x = 5.0, y = 5.0, z = 1.0},
+			Pos = {x = 266.63, y = -3084.33, z = 4.82},
+			Size = {x = 4.0, y = 4.0, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
-			Marker = 1,
-			Blip = false,
+			Marker = 25,
+			Blip = true,
 			Name = _U('return_vh'),
 			Type = 'vehdelete',
 			Hint = _U('return_vh_button'),
 			Spawner = 1,
-			Caution = 2000,
+			Caution = Config.FuelerCaution,
 			GPS = 0,
 			Teleport = 0
 		},
 
 		Delivery = {
-			Pos = {x = 491.40, y = -2163.37, z = 4.91},
-			Color = {r = 204, g = 204, b = 0},
-			Size = {x = 10.0, y = 10.0, z = 1.0},
-			Marker = 1,
+			Pos = {x = 1008.13, y = -2911.71, z = 4.92},
+			Color = {r = 0, g = 255, b = 0},
+			Size = {x = 4.0, y = 4.0, z = 1.0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('f_deliver_gas'),
 			Type = 'delivery',
@@ -169,7 +169,7 @@ Config.Jobs.fueler = {
 			},
 
 			Hint = _U('f_deliver_gas_button'),
-			GPS = {x = 609.58, y = 2856.74, z = 39.49}
+			GPS = 0
 		}
 
 	}
