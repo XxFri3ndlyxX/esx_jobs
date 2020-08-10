@@ -1,17 +1,23 @@
-Config              = {}
-Config.DrawDistance = 100.0
-Config.Locale       = 'fr'
-Config.Jobs         = {}
-
-Config.MaxCaution = 10000 -- the max caution allowed
+Config                   = {}
+Config.DrawDistance      = 100.0
+Config.Locale            = 'en'
+Config.Jobs              = {}
+Config.FishermanCaution  = 2000
+Config.FuelerCaution     = 2000
+Config.LumberjackCaution = 2000
+Config.MinerCaution      = 2000
+Config.ReporterCaution   = 2000
+Config.ButcherCaution    = 2000
+Config.TailorCaution     = 2000
+Config.MaxCaution        = 10000 -- the max caution allowed
 
 Config.PublicZones = {
 
 	EnterBuilding = {
 		Pos   = { x = -118.21, y = -607.14, z = 35.28 },
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
+		Color = {r = 0, g = 255, b = 0},
+		Marker= 25,
 		Blip  = false,
 		Name  = _U('reporter_name'),
 		Type  = "teleport",
@@ -22,8 +28,8 @@ Config.PublicZones = {
 	ExitBuilding = {
 		Pos   = { x = -139.45, y = -617.32, z = 167.82 },
 		Size  = {x = 3.0, y = 3.0, z = 0.2},
-		Color = {r = 204, g = 204, b = 0},
-		Marker= 1,
+		Color = {r = 0, g = 255, b = 0},
+		Marker= 25,
 		Blip  = false,
 		Name  = _U('reporter_name'),
 		Type  = "teleport",
