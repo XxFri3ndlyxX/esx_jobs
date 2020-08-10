@@ -16,7 +16,7 @@ Config.Jobs.fisherman = {
 
 		Boat = {
 			Spawner = 2,
-			Hash = 'tug',
+			Hash = 'tropic2',
 			Trailer = 'none',
 			HasCaution = true
 		}
@@ -26,27 +26,27 @@ Config.Jobs.fisherman = {
 	Zones = {
 
 		CloakRoom = {
-			Pos   = {x = 868.39, y = -1639.75, z = 29.33},
+			Pos   = {x = 1332.73, y = 4325.19, z = 37.1},
 			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker= 1,
+			Color = {r = 0, g = 255, b = 0},
+			Marker= 25,
 			Blip  = true,
 			Name  = _U('fm_fish_locker'),
 			Type  = 'cloakroom',
 			Hint  = _U('cloak_change'),
-			GPS = {x = 880.74, y = -1663.96, z = 29.37}
+			GPS = 0
 		},
 
 		FishingSpot = {
-			Pos   = {x = 4435.21, y = 4829.60, z = 0.34},
-			Color = {r = 204, g = 204, b = 0},
+			Pos   = {x = 2013.17, y = 4245.87, z = 30.98},
+			Color = {r = 0, g = 255, b = 0},
 			Size  = {x = 110.0, y = 110.0, z = 10.0},
-			Marker= 1,
+			Marker= 25,
 			Blip  = true,
 			Name  = _U('fm_fish_area'),
 			Type  = 'work',
 			Hint  = _U('fm_fish_button'),
-			GPS   = {x = 3859.43, y = 4448.83, z = 0.39},
+			GPS   = 0,
 			Item = {
 				{
 					name   = _U('fm_fish'),
@@ -64,21 +64,21 @@ Config.Jobs.fisherman = {
 		},
 
 		BoatSpawner = {
-			Pos   = {x = 3867.44, y = 4463.62, z = 1.72},
-			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker= 1,
+			Pos   = {x = 1334.84, y = 4306.66, z = 37.12},
+			Size  = {x = 1.6, y = 1.6, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker= 25,
 			Blip  = true,
 			Name  = _U('fm_spawnboat_title'),
 			Type  = 'vehspawner',
 			Spawner = 2,
 			Hint  = _U('fm_spawnboat'),
-			Caution = 0,
+			Caution = 2000,
 			GPS = {x = 4435.21, y = 4829.60, z = 0.34}
 		},
 
 		BoatSpawnPoint = {
-			Pos   = {x = 3888.3, y = 4468.09, z = 0.0},
+			Pos   = {x = 1341.34, y = 4269.58, z = 30.37},
 			Size  = {x = 3.0, y = 3.0, z = 1.0},
 			Marker= -1,
 			Blip  = false,
@@ -86,11 +86,11 @@ Config.Jobs.fisherman = {
 			Type  = 'vehspawnpt',
 			Spawner = 2,
 			GPS = 0,
-			Heading = 270.1
+			Heading = 179.5
 		},
 
 		BoatDeletePoint = {
-			Pos   = {x = 3859.43, y = 4448.83, z = 0.39},
+			Pos   = {x = 1334.19, y = 4264.020, z = 30.09},
 			Size  = {x = 10.0, y = 10.0, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
 			Marker= 1,
@@ -99,27 +99,27 @@ Config.Jobs.fisherman = {
 			Type  = 'vehdelete',
 			Hint  = _U('fm_boat_return_button'),
 			Spawner = 2,
-			Caution = 0,
-			GPS = {x = -1012.64, y = -1354.62, z = 5.54},
-			Teleport = {x = 3867.44, y = 4463.62, z = 1.72}
+			Caution = 2000,
+			GPS = 0,
+			Teleport = {x = 1334.84, y = 4306.66, z = 37.12}
 		},
 
 		VehicleSpawner = {
-			Pos   = {x = 880.74, y = -1663.96, z = 29.37},
-			Size  = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker= 1,
-			Blip  = false,
+			Pos   = {x = 1364.23, y = 4315.66, z = 36.71},
+			Size  = {x = 1.6, y = 1.6, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker= 25,
+			Blip  = true,
 			Name  = _U('spawn_veh'),
 			Type  = 'vehspawner',
 			Spawner = 1,
 			Hint  = _U('spawn_veh_button'),
-			Caution = 2000,
-			GPS = {x = 3867.44, y = 4463.62, z = 1.72}
+			Caution = Config.FishermanCaution,
+			GPS = 0
 		},
 
 		VehicleSpawnPoint = {
-			Pos   = {x = 859.35, y = -1656.21, z = 29.56},
+			Pos   = {x = 1372.61, y = 4315.99, z = 37.11},
 			Size  = {x = 3.0, y = 3.0, z = 1.0},
 			Marker= -1,
 			Blip  = false,
@@ -131,32 +131,32 @@ Config.Jobs.fisherman = {
 		},
 
 		VehicleDeletePoint = {
-			Pos   = {x = 863.23, y = -1718.28, z = 28.63},
+			Pos   = {x = 1342.39, y = 4318.75, z = 37.02},
 			Size  = {x = 5.0, y = 5.0, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
-			Marker= 1,
+			Marker= 25,
 			Blip  = false,
 			Name  = _U('return_vh'),
 			Type  = 'vehdelete',
 			Hint  = _U('return_vh_button'),
 			Spawner = 1,
-			Caution = 2000,
+			Caution = Config.FishermanCaution,
 			GPS = 0,
-			Teleport = 0
+			Teleport = {x = 1372.61, y = 4315.99, z = 37.11}
 		},
 
 		Delivery = {
-			Pos   = {x = -1012.64, y = -1354.62, z = 5.54},
+			Pos   = {x = -1039.46, y = -1352.75, z = 4.57},
 			Color = {r = 204, g = 204, b = 0},
-			Size  = {x = 5.0, y = 5.0, z = 3.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker= 1,
+			Size  = {x = 2.25, y = 2.25, z = 3.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker= 25,
 			Blip  = true,
 			Name  = _U('delivery_point'),
 			Type  = 'delivery',
 			Spawner = 2,
 			Hint  = _U('fm_deliver_fish'),
-			GPS   = {x = 3867.44, y = 4463.62, z = 1.72},
+			GPS   = 0,
 			Item = {
 				{
 				name   = _U('delivery'),
