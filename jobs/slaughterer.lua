@@ -18,10 +18,10 @@ Config.Jobs.slaughterer = {
 	Zones = {
 
 		CloakRoom = {
-			Pos = {x = -1071.13, y = -2003.78, z = 14.78},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = -1070.87, y = -2003.36, z = 14.82},
+			Size = {x = 2.4, y = 2.4, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('s_slaughter_locker'),
 			Type = 'cloakroom',
@@ -29,10 +29,10 @@ Config.Jobs.slaughterer = {
 		},
 
 		AliveChicken = {
-			Pos = {x = -62.90, y = 6241.46, z = 30.09},
+			Pos = {x = -62.90, y = 6241.46, z = 30.13},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('s_hen'),
 			Type = 'work',
@@ -53,10 +53,10 @@ Config.Jobs.slaughterer = {
 		},
 
 		SlaughterHouse = {
-			Pos = {x = -77.99, y = 6229.06, z = 30.09},
+			Pos = {x = -77.99, y = 6229.06, z = 30.13},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('s_slaughtered'),
 			Type = 'work',
@@ -77,10 +77,10 @@ Config.Jobs.slaughterer = {
 		},
 
 		Packaging = {
-			Pos = {x = -101.97, y = 6208.79, z = 30.02},
+			Pos = {x = -101.97, y = 6208.79, z = 30.06},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('s_package'),
 			Type = 'work',
@@ -101,49 +101,49 @@ Config.Jobs.slaughterer = {
 		},
 
 		VehicleSpawner = {
-			Pos = {x = -1042.94, y = -2023.25, z = 12.16},
-			Size = {x = 3.0, y = 3.0, z = 1.0},
-			Color = {r = 204, g = 204, b = 0},
-			Marker = 1,
+			Pos = {x = -1042.43, y = -2023.48, z = 12.2},
+			Size = {x = 2.2, y = 2.2, z = 1.0},
+			Color = {r = 0, g = 255, b = 0},
+			Marker = 25,
 			Blip = false,
 			Name = _U('spawn_veh'),
 			Type = 'vehspawner',
 			Spawner = 1,
 			Hint = _U('spawn_veh_button'),
-			Caution = 2000
+			Caution = Config.ButcherCaution
 		},
 
 		VehicleSpawnPoint = {
-			Pos = {x = -1048.85, y = -2025.32, z = 12.16},
+			Pos = {x = -1050.36, y = -2019.42, z = 13.13},
 			Size = {x = 3.0, y = 3.0, z = 1.0},
 			Marker = -1,
 			Blip = false,
 			Name = _U('service_vh'),
 			Type = 'vehspawnpt',
 			Spawner = 1,
-			Heading = 130.1
+			Heading = 135.5
 		},
 
 		VehicleDeletePoint = {
-			Pos = {x = -1061.51, y = -2008.35, z = 12.16},
-			Size = {x = 5.0, y = 5.0, z = 1.0},
+			Pos = {x = -1058.17, y = -2005.1, z = 12.2},
+			Size = {x = 3.8, y = 3.8, z = 1.0},
 			Color = {r = 255, g = 0, b = 0},
-			Marker = 1,
+			Marker = 25,
 			Blip = false,
 			Name = _U('return_vh'),
 			Type = 'vehdelete',
 			Hint = _U('return_vh_button'),
 			Spawner = 1,
-			Caution = 2000,
+			Caution = Config.ButcherCaution,
 			GPS = 0,
 			Teleport = 0
 		},
 
 		Delivery = {
 			Pos = {x = -596.15, y = -889.32, z = 24.50},
-			Color = {r = 204, g = 204, b = 0},
-			Size = {x = 5.0, y = 5.0, z = 1.0},
-			Marker = 1,
+			Color = {r = 0, g = 255, b = 0},
+			Size = {x = 3.8, y = 3.8, z = 1.0},
+			Marker = 25,
 			Blip = true,
 			Name = _U('delivery_point'),
 			Type = 'delivery',
